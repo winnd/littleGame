@@ -5,13 +5,13 @@ import './index.css';
 // 1. Initialize
 const app = dva({
     initialState:{
-        // CurrentStoryIndex :     0,      //第几剧情
-        // CurrentSentenceIndex :  0,	    //第几句话
+        CurrentStoryIndex :     0,      //第几剧情
+        CurrentSentenceIndex :  0,	    //第几句话
         // CurrentQuestionIndex :  0,		//第几问题
         // CurrentChoiceIndex :    0,      //第几选择
         // CurrentchoiceLength :   0,		//长度
         // choiceFlag :            false,
-       newJson : [
+        newJson : [
             {'type':'剧情1',
                 'content':[
                     '旁白1',
@@ -39,8 +39,10 @@ const app = dva({
                     },
             ]}
         ],   //newJson结束
-
-        
+        choiceObj : [
+            {"question":"你的性别?","choice":[{"content":"有大屌",'result':true},{"content":"没大屌",'result':false},{"content":"隐藏大屌",'result':false},{"content":"vgvg",'result':false}]},
+            {"question":"待续","choice":[{"content":"选择1",'result':true},{"content":"选择2",'result':false}]}
+        ],   //choiceObj结束
         struct : [
             {"title":"章节1",
                 "content":{
