@@ -5,10 +5,10 @@ const TextBox = ({text,onClick}) => {
     
     return (
         <section className={styles.textBox} onClick={onClick}>
-            {text}testsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+            {text}
         </section>
     );
-    
+
 };
 
 TextBox.propTypes = {
