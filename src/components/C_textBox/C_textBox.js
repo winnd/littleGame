@@ -1,12 +1,14 @@
 import React, { PropTypes } from 'react';
 import styles from './C_textBox.less';
 
-const TextBox = () => {
+const TextBox = ({text,onClick}) => {
+    
     return (
-        <section className={styles.textBox}>
-            testsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+        <section className={styles.textBox} onClick={onClick}>
+            {text}testsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
         </section>
     );
+    
 };
 
 TextBox.propTypes = {

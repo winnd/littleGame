@@ -4,21 +4,22 @@ import C_textBox from '../components/C_textBox/C_textBox';
 import C_choiceBranch from '../components/C_choiceBranch/C_choiceBranch';
 import {connect} from 'dva';
 
-const GameIndex = ({}) => {
-    function nextSentence(targetJson){
+const GameIndex = ({dispatch,CurrentStoryIndex}) => {
+    function nextSentence(text){
         dispatch({
-            type:'m_nextSentence/nextSentence',
-            r_try:targetJson,
+            type:'m_nextSentence/showNext',
         })
     }
 
 
+var text = "阿斯顿发";
+console.log(CurrentStoryIndex)
     return (
         <div>
             <C_choiceBranch/>
-            <C_textBox onClick={nextSentence}/>
+            <C_textBox text={text} onClick={nextSentence}/>
         </div>
-    );
+    );/* onClick={nextSentence}*/
 };
 
 export default connect(({m_nextSentence})=>({

@@ -2,11 +2,17 @@ import dva from 'dva';
 
 export default {
     namespace: 'm_nextSentence',
-    state:[],
+    state:{
+        CurrentStoryIndex :     0,      //第几剧情
+        CurrentSentenceIndex :  0,	    //第几句话
+    },
     reducers:{
-        'nextSentence'(state,{targetJson:id}){
-            cosole.log("进入nextSentence");
-            return ;
+        'showNext'(state,payload){
+            console.log("进入nextSentence");
+            return {
+                CurrentStoryIndex       : 1,
+                CurrentSentenceIndex    : 1,
+            };
         }
     }
 }
