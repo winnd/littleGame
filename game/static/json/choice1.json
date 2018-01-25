@@ -1,0 +1,22 @@
+{
+  "no": 1,
+  "question":"问题?",
+  "otherDescription":"",
+  "content": [
+    {
+      "choiceNo": "1",
+      "txt": "选择支1",
+      "toNextStory": 2
+    },
+    {
+      "choiceNo": "2",
+      "txt": "选择支2",
+      "toNextStory": 3
+    },
+    {
+      "choiceNo": "3",
+      "txt": "选择支3",
+      "toNextStory": 3
+    }
+  ]
+}

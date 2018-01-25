@@ -1,0 +1,38 @@
+{
+  "title": "第一章",
+  "sence": [{
+    "no":1,
+    "type":"talk",
+    "name":"旁白",
+    "img": "",
+    "bgm": "",
+    "talk": [
+      "1",
+      "2",
+      "3"
+    ],
+    "senceChange":{
+      "animate":"",
+      "nextSence":""
+    }
+  },{
+    "no":2,
+    "type":"question",
+    "questionNo":1
+  },{
+    "no":3,
+    "type":"talk",
+    "name":"旁白",
+    "img": "",
+    "bgm": "",
+    "talk": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "senceChange":{
+    "animate":"",
+    "nextSence":""
+  }]
+}
